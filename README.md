@@ -63,7 +63,7 @@ This project combines ultrasonic sensing and embedded machine learning. Sensor m
   <img src="https://github.com/user-attachments/assets/fb1b248d-ae99-4adc-82ba-2389ae4e7787" width="600" alt="Edge Impulse model results">
 </p>
 
-### Physical Hardware Setup
+### Hardware Setup
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/3445a55e-68b6-45a6-bb17-e6cf1b89bca5" width="450" alt="Ultrasonic sensor hardware setup">
