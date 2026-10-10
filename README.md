@@ -55,7 +55,8 @@ Watch the real hardware implementation:
 
 ![Edge Impulse project](https://github.com/user-attachments/assets/27d89859-1866-4af5-9518-ef1abab62552)
 
-![Edge Impulse interface](https://github.com/user-attachments/assets/027f3fc4-99a5-4547-b1e0-1ea32be73ce4)
+<img width="439" height="382" alt="Screenshot 2026-09-02 123248" src="https://github.com/user-attachments/assets/5c0ca093-fe30-458d-af6d-7e8e36fc4fe0" />
+
 
 ![Model results](https://github.com/user-attachments/assets/fb1b248d-ae99-4adc-82ba-2389ae4e7787)
 
