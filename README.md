@@ -97,7 +97,7 @@ This project combines ultrasonic sensing and embedded machine learning. Sensor m
 
 ## Author
 
-**Ajmal Khan**  
+**Muhammad Ajmal**  
 Robotics and Intelligent Systems Student  
 University of Haripur, Pakistan
 
