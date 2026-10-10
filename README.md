@@ -1,25 +1,27 @@
 # Edge Impulse Ultrasonic Ranging
 
-Embedded machine learning for ultrasonic distance measurement using Edge Impulse and an HC-SR04 ultrasonic sensor.
+**Embedded Machine Learning for Ultrasonic Distance Measurement**
 
-## Overview
+This project explores embedded machine learning for ultrasonic distance measurement using an HC-SR04 sensor, a Heltec LoRa 32 V2 (ESP32), and Edge Impulse.
 
-This project explores how machine learning can estimate object distance from ultrasonic sensor data. An Edge Impulse model is trained using collected measurements and evaluated for distance estimation.
+## Project Overview
 
-## Hardware
+The goal is to collect ultrasonic sensor measurements, train a machine learning model in Edge Impulse, and evaluate its ability to estimate object distance. The project combines sensor interfacing, embedded systems, and machine learning for robotics applications.
 
-- Heltec LoRa 32 V2 (ESP32-based board)
-- HC-SR04 ultrasonic distance sensor
+## Hardware Requirements
+
+- **Microcontroller:** Heltec LoRa 32 V2 (ESP32-based)
+- **Sensor:** HC-SR04 ultrasonic distance sensor
 - Jumper wires
 - USB cable for programming and power
 
 ## How It Works
 
 1. The HC-SR04 measures the distance to an object.
-2. Sensor readings are collected for the dataset.
-3. Data is uploaded and processed in Edge Impulse.
-4. A machine learning model is trained to estimate distance.
-5. The model is evaluated and can be deployed to compatible embedded hardware.
+2. Sensor readings are collected and labeled for model development.
+3. Data is processed in Edge Impulse.
+4. A machine learning model is trained and evaluated.
+5. The model can be deployed to compatible hardware for testing.
 
 ## Edge Impulse Workflow
 
@@ -27,55 +29,61 @@ This project explores how machine learning can estimate object distance from ult
 - Signal processing and feature extraction
 - Model training
 - Model evaluation
-- Embedded deployment
+- Embedded deployment and hardware testing
 
 ## Hardware Setup
 
-The ultrasonic sensor is connected to the ESP32-based development board to collect distance measurements. The hardware setup and project screenshots are shown below.
+The HC-SR04 is interfaced with the ESP32-based development board to collect distance measurements. The following images show the Edge Impulse workflow, model results, and physical hardware setup.
+
+## Project Demonstration
+
+**Watch the real hardware demonstration:**
+
+[▶ Watch the Ultrasonic Ranging Demo on Google Drive](https://drive.google.com/file/d/1ImyqQfyyR7YWCKGojYhrc30CTlV_ljm_/view?usp=drive_link)
 
 ## Project Images
 
 ### Edge Impulse Model and Results
 
-![Edge Impulse project screenshot](https://github.com/user-attachments/assets/27d89859-1866-4af5-9518-ef1abab62552)
+![Edge Impulse project](https://github.com/user-attachments/assets/27d89859-1866-4af5-9518-ef1abab62552)
 
 ![Edge Impulse interface](https://github.com/user-attachments/assets/027f3fc4-99a5-4547-b1e0-1ea32be73ce4)
 
 ![Model results](https://github.com/user-attachments/assets/fb1b248d-ae99-4adc-82ba-2389ae4e7787)
 
-### Hardware Setup
+### Physical Hardware Setup
 
-![Ultrasonic sensor hardware setup](https://github.com/user-attachments/assets/3445a55e-68b6-45a6-bb17-e6cf1b89bca5)
+![Ultrasonic ranging hardware](https://github.com/user-attachments/assets/3445a55e-68b6-45a6-bb17-e6cf1b89bca5)
 
-![Hardware setup additional view](https://github.com/user-attachments/assets/3fc416c7-1ab3-45e8-8142-508adc51f79f)
+![Ultrasonic hardware additional view](https://github.com/user-attachments/assets/3fc416c7-1ab3-45e8-8142-508adc51f79f)
 
 ## Applications
 
-- Embedded distance measurement
-- Robotics and obstacle sensing
-- Edge AI experimentation
-- Sensor-based machine learning
+- Robotic distance sensing
+- Obstacle detection experiments
+- Embedded machine learning
+- Sensor-based distance estimation
 
 ## Future Improvements
 
-- Test distance estimation across different ranges.
-- Compare model predictions with actual measurements.
-- Evaluate model performance under different conditions.
-- Deploy and test the model on the target hardware.
+- Test measurements across different distances.
+- Compare model predictions with actual sensor readings.
+- Evaluate performance under different environmental conditions.
+- Optimize and deploy the model for real-time embedded inference.
 
-## Technologies
+## Technologies Used
 
 - Edge Impulse
 - ESP32 / Heltec LoRa 32 V2
 - HC-SR04 ultrasonic sensor
-- Embedded C/C++ and Arduino IDE
+- Arduino IDE
+- Embedded C/C++
 
 ## Author
 
-**Ajmal Khan**
-
+**Ajmal Khan**  
 Robotics and Intelligent Systems Student  
-University of Haripur
+University of Haripur, Pakistan
 
 ---
 
@@ -83,19 +91,8 @@ University of Haripur
 
 
 
-# Edge-Impulse-Ultrasonic-Ranging
-Embedded machine learning for precise ultrasonic distance measurement and regression using Edge Impulse.
-<img width="449" height="319" alt="Screenshot 2026-09-02 123903" src="https://github.com/user-attachments/assets/27d89859-1866-4af5-9518-ef1abab62552" />
 
 
-<img width="476" height="498" alt="Screenshot 2026-09-02 123248" src="https://github.com/user-attachments/assets/027f3fc4-99a5-4547-b1e0-1ea32be73ce4" />
 
-
-<img width="913" height="272" alt="Screenshot 2026-09-02 124153" src="https://github.com/user-attachments/assets/fb1b248d-ae99-4adc-82ba-2389ae4e7787" />
-
-<img width="1280" height="960" alt="WhatsApp Image 2026-09-03 at 8 21 55 PM" src="https://github.com/user-attachments/assets/3445a55e-68b6-45a6-bb17-e6cf1b89bca5" />
-
-
-<img width="960" height="1280" alt="WhatsApp Image 2026-09-03 at 8 21 55 PM (1)" src="https://github.com/user-attachments/assets/3fc416c7-1ab3-45e8-8142-508adc51f79f" />
 
 
