@@ -22,18 +22,18 @@ This project combines ultrasonic sensing and embedded machine learning. Sensor m
 | VCC | 5V |
 | GND | GND |
 | TRIG | GPIO 17 |
-| ECHO | GPIO 16, through a suitable voltage divider or level shifter |
+| ECHO | GPIO 16, through a voltage divider or logic-level shifter |
 
-**Important:** The ESP32 GPIO pins operate at 3.3V and are not 5V tolerant. The HC-SR04 ECHO output may be 5V, so reduce it to a safe 3.3V logic level before connecting it to GPIO 16.
+**Important:** ESP32 GPIO pins operate at 3.3V and are not 5V tolerant. Reduce the HC-SR04 ECHO signal to a safe 3.3V level before connecting it to GPIO 16.
 
 ## How It Works
 
 1. The HC-SR04 sends an ultrasonic pulse.
-2. The sensor receives the reflected echo from an object.
-3. The ESP32 reads the echo signal and calculates distance.
-4. Measurements are collected for processing in Edge Impulse.
+2. The sensor receives the reflected echo.
+3. The ESP32 calculates the distance from the echo time.
+4. Measurements are collected for Edge Impulse.
 5. A machine learning model is trained and evaluated.
-6. The model can be deployed to compatible hardware for testing.
+6. The model is deployed to compatible hardware for testing.
 
 ## Edge Impulse Workflow
 
@@ -45,26 +45,33 @@ This project combines ultrasonic sensing and embedded machine learning. Sensor m
 
 ## Hardware Demonstration
 
-Watch the real hardware implementation:
-
 **[▶ Watch the Ultrasonic Ranging Demo](https://drive.google.com/file/d/1ImyqQfyyR7YWCKGojYhrc30CTlV_ljm_/view?usp=drive_link)**
 
 ## Project Images
 
 ### Edge Impulse Model and Results
 
-![Edge Impulse project](https://github.com/user-attachments/assets/27d89859-1866-4af5-9518-ef1abab62552)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/27d89859-1866-4af5-9518-ef1abab62552" width="600" alt="Edge Impulse project overview">
+</p>
 
-<img width="439" height="382" alt="Screenshot 2026-09-02 123248" src="https://github.com/user-attachments/assets/5c0ca093-fe30-458d-af6d-7e8e36fc4fe0" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5c0ca093-fe30-458d-af6d-7e8e36fc4fe0" width="600" alt="Edge Impulse interface">
+</p>
 
-
-![Model results](https://github.com/user-attachments/assets/fb1b248d-ae99-4adc-82ba-2389ae4e7787)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/fb1b248d-ae99-4adc-82ba-2389ae4e7787" width="600" alt="Edge Impulse model results">
+</p>
 
 ### Physical Hardware Setup
 
-![Ultrasonic ranging hardware setup](https://github.com/user-attachments/assets/3445a55e-68b6-45a6-bb17-e6cf1b89bca5)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3445a55e-68b6-45a6-bb17-e6cf1b89bca5" width="450" alt="Ultrasonic sensor hardware setup">
+</p>
 
-![Ultrasonic hardware additional view](https://github.com/user-attachments/assets/3fc416c7-1ab3-45e8-8142-508adc51f79f)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3fc416c7-1ab3-45e8-8142-508adc51f79f" width="450" alt="Ultrasonic hardware setup, additional view">
+</p>
 
 ## Applications
 
@@ -75,9 +82,9 @@ Watch the real hardware implementation:
 
 ## Future Improvements
 
-- Test distance measurements across different ranges.
-- Compare predicted distances with actual measurements.
-- Evaluate model performance under different conditions.
+- Test measurements across different distances.
+- Compare model predictions with actual readings.
+- Evaluate performance under different conditions.
 - Optimize the model for real-time embedded inference.
 
 ## Technologies Used
@@ -96,7 +103,7 @@ University of Haripur, Pakistan
 
 ---
 
-*An educational project exploring embedded machine learning and ultrasonic distance ranging for robotics applications.*
+*An educational project exploring embedded machine learning for ultrasonic distance ranging in robotics.*
 
 
 
